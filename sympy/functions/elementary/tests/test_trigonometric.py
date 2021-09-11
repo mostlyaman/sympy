@@ -290,7 +290,7 @@ def test_cos():
     assert cos(acos(x)) == x
     assert cos(atan(x)) == 1 / sqrt(1 + x**2)
     assert cos(asin(x)) == sqrt(1 - x**2)
-    assert cos(acot(x)) == 1 / sqrt(1 + 1 / x**2)
+    assert cos(acot(x)) == x / sqrt(1 + x**2)
     assert cos(acsc(x)) == sqrt(1 - 1 / x**2)
     assert cos(asec(x)) == 1 / x
     assert cos(atan2(y, x)) == x / sqrt(x**2 + y**2)

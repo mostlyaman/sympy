@@ -701,7 +701,7 @@ class cos(TrigonometricFunction):
 
         if isinstance(arg, acot):
             x = arg.args[0]
-            return 1/sqrt(1 + 1/x**2)
+            return x/sqrt(1 + x**2)
 
         if isinstance(arg, acsc):
             x = arg.args[0]
